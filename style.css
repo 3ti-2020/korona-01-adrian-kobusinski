@@ -1,3 +1,33 @@
 body {
-color: rgb(128, 1, 1);
+background-color: rgb(128, 1, 1);
+}
+
+.cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "n n n n"
+    "w w e e"
+    "w w e e"
+    "w w s s";
+    width: 100%;
+    height: 100%;
+    background-color: rgb(128, 1, 1);
+}
+
+.head{
+    grid-area: n;
+}
+
+.right{
+    grid-area: e;
+}
+
+.left{
+    grid-area: w;
+}
+
+.bottom{
+    grid-area: s;
 }
