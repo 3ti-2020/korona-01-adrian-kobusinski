@@ -1,3 +1,31 @@
+@keyframes animacja {
+    0%{background:greenyellow;
+    color: yellow;}
+    50%{background: greenyellow;
+    color: yellow;}
+    100%{background: greenyellow;
+    color: yellow;}
+}
+
+@keyframes animacja2 {
+    0%{background:orangered;
+    color: orange;}
+    50%{background: orangered;
+    color: orange;}
+    100%{background: orangered;
+    color: orange;}
+}
+
+@keyframes animacja3 {
+    0%{background:rgb(202, 235, 19);
+    color: blueviolet;}
+    50%{background: rgb(202, 235, 19);
+    color: blueviolet;}
+    100%{background: rgb(202, 235, 19);
+    color: blueviolet;}
+}
+
+
 body {
 background-color: rgb(128, 1, 1);
 display: flex;
@@ -28,8 +56,9 @@ padding: 0px;
     height: 100%;
     background: cyan;
     display: flex;
+    justify-content: center;
+    align-items: center;
     
-   
 }
 
 .right{
@@ -58,6 +87,10 @@ padding: 0px;
     width: 100%;
     height: 100%;
     background: black;
+    margin: 0px;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
 }
 
 .tabela1{
@@ -68,7 +101,7 @@ padding: 0px;
 }
 
 .tabela2{
-    background-color: pink;
+    background-color: greenyellow;
     border: 1px solid black;
     width: 100%;
     height: 90%;
@@ -83,4 +116,36 @@ padding: 0px;
 
 td{
     border: 1px solid black;
+}
+
+h1{
+    width: 50%;
+    
+}
+
+button{
+    height: 35%;
+    border-radius: 100%;
+    background: yellow;
+}
+
+.przycisk{
+    color: crimson;
+    border-radius: 100%;
+}
+
+h3{
+    color: teal;
+}
+
+.td:hover {
+    animation: animacja 3s infinite;
+}
+
+.td1:hover {
+    animation: animacja2 3s infinite;
+}
+
+.td2:hover {
+    animation: animacja3 3s infinite;
 }
